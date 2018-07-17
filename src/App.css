@@ -1,0 +1,87 @@
+.App {
+  text-align: center;
+}
+body{
+  background-color: black;
+}
+.header {
+  background-color: #444444;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 150px;
+  color: white;
+}
+
+.title {
+  font-family: Exo;
+  font-size: 52px;
+  text-align: center;
+  padding-top: 0px;
+  color: #0077f0;
+  line-height: 8px;
+  text-transform: uppercase;
+}
+.message {
+  font-family: open sans;
+  font-size: 28px;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+  margin-top: -40px;
+}
+.score {
+  font-family: open sans;
+  font-size: 20px;
+  text-align: left;
+  padding-bottom: 15px;
+}
+.top-score{
+  font-family: open sans;
+  font-size: 20px;
+  text-align: left;
+  padding-bottom: 15px;
+  color: #f7941d;
+  font-weight: 600;
+  padding-right: 5px;
+}
+.score-line {
+  font-size: 20px;
+  text-align: left;
+  padding-bottom: 15px;
+  color: #0077f0;
+  padding: 10px;
+}
+.img-grid {
+  display: grid;
+  grid-template-columns: 250px 250px 250px 250px;
+  grid-template-rows: 250px 250px 250px 250px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  grid-gap: 15px;
+}
+a .img-one {
+  border: #ffffff 1px solid;
+  width: 180px;
+  height: 180px;
+  border-radius: 10px;
+}
+
+a :hover{
+  width: 200px;
+  height: 200px;
+  border: #777777 2px solid;
+  box-shadow: 0px 0px 20px #eeeeee;
+}
+
+
+
+.wrapper {
+  height: 100vh;
+  overflow: hidden;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
