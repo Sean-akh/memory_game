@@ -78,7 +78,7 @@ console.log('topscore at the top: ', topscoreJam)
     //create iage grid and make it clickable
         let showImages = this.state.images.map((image, index) =>
           <div className="image-run">
-            <a href="#" key={index} onClick={() => this.imageHandler(image.id)}>
+            <a key={index} onClick={() => this.imageHandler(image.id)}>
             <img src = {image.url} alt="" className ="img-one"></img>
             </a>
           </div>
@@ -96,7 +96,6 @@ console.log('topscore at the top: ', topscoreJam)
              {this.state.message}
           </div>
           <div>
-// {console.log('the score at the bottom is: ', this.state.score, '\nthe top score is:', this.state.topScore, '\n==============')}
             <span className = "score"> Score: </span> <span className = "top-score">{this.state.score}</span>
             <span className = "score-line"> | </span> 
             <span className = "score">Top Score: </span> <span className = "top-score">{this.state.topScore} </span>
